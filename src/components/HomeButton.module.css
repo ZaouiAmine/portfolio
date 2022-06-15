@@ -1,0 +1,17 @@
+.btn {
+  position: absolute;
+  right: 7vw;
+  top: 7vh;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1b1b1b;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  right: 9vw;
+  color: #d3101d;
+}
+/*# sourceMappingURL=HomeButton.module.css.map */

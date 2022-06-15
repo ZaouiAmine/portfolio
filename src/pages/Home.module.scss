@@ -1,0 +1,40 @@
+.full {
+  display: flex;
+
+  height: 100vh;
+  width: 100%;
+  background-color: #e0e0e0;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    img {
+      height: 80%;
+    }
+  }
+  .right {
+    width: 50%;
+    display: flex;
+    margin-left: -5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full {
+    flex-direction: column-reverse;
+    .left {
+      width: 100%;
+      justify-content: fels;
+      img {
+        height: 50vw;
+      }
+    }
+    .right {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

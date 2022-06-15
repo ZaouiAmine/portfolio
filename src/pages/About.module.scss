@@ -1,0 +1,55 @@
+.full {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  position: relative;
+  ::selection {
+    color: #1b1b1b;
+    background: #d3101d;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .hero {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1b1b1b;
+      h1 {
+        font-size: 7vw;
+        span {
+          color: #d3101d;
+        }
+      }
+    }
+    .text {
+      min-height: 100vh;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 50px;
+      h2 {
+        color: #1b1b1b;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+      }
+      a {
+        color: #d3101d;
+        font-size: large;
+      }
+      a:visited {
+        color: #d3101d;
+      }
+      p {
+        font-size: large;
+      }
+    }
+  }
+}
