@@ -41,7 +41,7 @@ function Portfolio() {
     <>
       <HomeButton />
       <div className="full">
-        <img className="arrow" src={arrowImg} />
+        <img className="arrow" src={arrowImg} alt="" />
         <div className="cards-box">
           <div className="card hide"></div>
           <div className="card card-one"></div>
