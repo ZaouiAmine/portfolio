@@ -24,6 +24,10 @@
   height: 80%;
 }
 
+.full .leftResponsive {
+  display: none;
+}
+
 .full .right {
   width: 50%;
   display: -webkit-box;
@@ -44,23 +48,41 @@
 
 @media screen and (max-width: 768px) {
   .full {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .full .left {
-    width: 100%;
-    -webkit-box-pack: fels;
-        -ms-flex-pack: fels;
-            justify-content: fels;
+    display: none;
   }
-  .full .left img {
-    height: 50vw;
+  .full .leftResponsive {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+  .full .leftResponsive img {
+    margin: 0;
+    width: 50vw;
   }
   .full .right {
-    width: 100%;
+    width: auto;
     margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10;
+  }
+  .full .right a {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 500px) {
+  .full .leftResponsive img {
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=Home.module.css.map */

@@ -18,4 +18,17 @@
   color: #d3101d;
   margin-left: 5vw;
 }
+
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title h1 {
+    font-size: 14vw;
+    -webkit-text-stroke-width: 1.2px;
+  }
+}
 /*# sourceMappingURL=HomeText.module.css.map */

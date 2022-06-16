@@ -13,6 +13,9 @@
       height: 80%;
     }
   }
+  .leftResponsive {
+    display: none;
+  }
   .right {
     width: 50%;
     display: flex;
@@ -24,17 +27,39 @@
 }
 @media screen and (max-width: 768px) {
   .full {
-    flex-direction: column-reverse;
+    justify-content: center;
     .left {
-      width: 100%;
-      justify-content: fels;
+      display: none;
+    }
+    .leftResponsive {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+
       img {
-        height: 50vw;
+        margin: 0;
+        width: 50vw;
       }
     }
     .right {
-      width: 100%;
+      width: auto;
       margin: 0;
+      align-items: center;
+      z-index: 10;
+      a {
+        align-self: flex-start;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .full {
+      .leftResponsive {
+        img {
+          width: 70vw;
+        }
+      }
     }
   }
 }

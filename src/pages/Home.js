@@ -1,5 +1,6 @@
 import React from "react";
 import MyImage from "../assets/me.jpg";
+import MyImageNoBg from "../assets/me-no-bg.png";
 import HomeText from "../components/HomeText";
 import Styles from "./Home.module.css";
 
@@ -8,6 +9,9 @@ function Home() {
     <div className={Styles.full}>
       <div className={Styles.left}>
         <img src={MyImage} alt="zaoui mohammed amine" />
+      </div>
+      <div className={Styles.leftResponsive}>
+        <img src={MyImageNoBg} alt="zaoui mohammed amine" />
       </div>
       <div className={Styles.right}>
         <HomeText text="ABOUT" link="/about" />

@@ -42,13 +42,19 @@
       }
       a {
         color: #d3101d;
-        font-size: large;
+        font-size: larger;
       }
       a:visited {
         color: #d3101d;
       }
       p {
         font-size: large;
+        font-weight: 400;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .text {
+        width: 70%;
       }
     }
   }

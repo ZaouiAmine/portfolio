@@ -78,7 +78,7 @@
 
 .full .content .text a {
   color: #d3101d;
-  font-size: large;
+  font-size: larger;
 }
 
 .full .content .text a:visited {
@@ -87,5 +87,12 @@
 
 .full .content .text p {
   font-size: large;
+  font-weight: 400;
 }
-/*# sourceMappingURL=about.module.css.map */
+
+@media screen and (max-width: 900px) {
+  .full .content .text {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=About.module.css.map */
