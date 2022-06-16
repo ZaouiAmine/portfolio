@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Styles from "./App.module.css";
 
 import Home from "./pages/Home";
@@ -11,10 +11,11 @@ function App() {
   return (
     <div className={Styles.container}>
       <Routes>
-        <Route path="/*" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/hire-me" element={<HireMe />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   );
